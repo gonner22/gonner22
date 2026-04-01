@@ -32,9 +32,10 @@ I'm **Topper** (`gonner22`). I care about the **open source** ecosystem, **AI / 
 <!-- Stats SVGs: official github-readme-stats.vercel.app is often 503; using a community mirror (see github.com/PencilNavigator/readme-stats-URL). Backup: https://github-readme-stats-eight-theta.vercel.app -->
 ### <img src="https://cdn.simpleicons.org/github/58A6FF" width="22" height="22" alt="" /> GitHub stats
 
+<!-- Streak: demolab often fails; official deployment is streak-stats.vercel.app (DenverCoder1/github-readme-streak-stats) -->
 <p align="center">
   <img height="180" src="https://github-readme-stats-sigma-five.vercel.app/api?username=gonner22&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true" alt="gonner22 GitHub stats" />
-  <img height="180" src="https://github-readme-streak-stats.demolab.com/?user=gonner22&theme=tokyonight&hide_border=true" alt="Contribution streak" />
+  <img height="180" src="https://streak-stats.vercel.app/?user=gonner22&theme=tokyonight&hide_border=true" alt="Contribution streak" />
 </p>
 
 <p align="center">
@@ -46,13 +47,13 @@ I'm **Topper** (`gonner22`). I care about the **open source** ecosystem, **AI / 
 ### <img src="https://cdn.simpleicons.org/github/58A6FF" width="22" height="22" alt="" /> Repositories
 
 <p align="center">
-  <img width="400" src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=gonner22&repo=AIPG-GenHub&theme=tokyonight&hide_border=true&show_icons=true&show_owner=true" alt="AIPG-GenHub" />
-  <img width="400" src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=gonner22&repo=telestai-cb&theme=tokyonight&hide_border=true&show_icons=true&show_owner=true" alt="telestai-cb" />
+  <a href="https://github.com/gonner22/AIPG-GenHub"><img width="400" src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=gonner22&repo=AIPG-GenHub&theme=tokyonight&hide_border=true&show_icons=true&show_owner=true" alt="AIPG-GenHub" /></a>
+  <a href="https://github.com/gonner22/telestai-cb"><img width="400" src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=gonner22&repo=telestai-cb&theme=tokyonight&hide_border=true&show_icons=true&show_owner=true" alt="telestai-cb" /></a>
 </p>
 
 <p align="center">
-  <img width="400" src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=gonner22&repo=aphrodite-engine&theme=tokyonight&hide_border=true&show_icons=true&show_owner=true" alt="aphrodite-engine" />
-  <img width="400" src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=gonner22&repo=AIPG-Discord-Bot&theme=tokyonight&hide_border=true&show_icons=true&show_owner=true" alt="AIPG-Discord-Bot" />
+  <a href="https://github.com/gonner22/aphrodite-engine"><img width="400" src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=gonner22&repo=aphrodite-engine&theme=tokyonight&hide_border=true&show_icons=true&show_owner=true" alt="aphrodite-engine" /></a>
+  <a href="https://github.com/gonner22/AIPG-Discord-Bot"><img width="400" src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=gonner22&repo=AIPG-Discord-Bot&theme=tokyonight&hide_border=true&show_icons=true&show_owner=true" alt="AIPG-Discord-Bot" /></a>
 </p>
 
 ---
