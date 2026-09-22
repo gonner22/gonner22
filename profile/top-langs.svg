@@ -1,34 +1,106 @@
 
       <svg
-        width="350"
+        width="300"
         height="190"
-        viewBox="0 0 350 190"
+        viewBox="0 0 300 190"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        role="img"
+        aria-labelledby="descId"
       >
+        <title id="titleId"></title>
+        <desc id="descId"></desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
             fill: #70a5fd;
             animation: fadeInAnimation 0.8s ease-in-out forwards;
           }
+          @supports(-moz-appearance: auto) {
+            /* Selector detects Firefox */
+            .header { font-size: 15.5px; }
+          }
           
-    .lang-name { font: 400 11px 'Inter', Ubuntu, Sans-Serif; fill: #38bdae }
-  
+    @keyframes slideInAnimation {
+      from {
+        width: 0;
+      }
+      to {
+        width: calc(100%-100px);
+      }
+    }
+    @keyframes growWidthAnimation {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+    .stat {
+      font: 600 14px 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif; fill: #38bdae;
+    }
+    @supports(-moz-appearance: auto) {
+      /* Selector detects Firefox */
+      .stat { font-size:12px; }
+    }
+    .bold { font-weight: 700 }
+    .lang-name {
+      font: 400 11px "Segoe UI", Ubuntu, Sans-Serif;
+      fill: #38bdae;
+    }
+    .stagger {
+      opacity: 0;
+      animation: fadeInAnimation 0.3s ease-in-out forwards;
+    }
+    #rect-mask rect{
+      animation: slideInAnimation 1s ease-in-out forwards;
+    }
+    .lang-progress{
+      animation: growWidthAnimation 0.6s ease-in-out forwards;
+    }
+    .progress-background { fill: #ddd; }
+    
+          
 
+          
+      /* Animations */
+      @keyframes scaleInAnimation {
+        from {
+          transform: translate(-5px, 5px) scale(0);
+        }
+        to {
+          transform: translate(-5px, 5px) scale(1);
+        }
+      }
+      @keyframes fadeInAnimation {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    
           
         </style>
 
-        undefined
+        
+        <defs>
+          
+          
+        </defs>
+        
 
         <rect
           data-testid="card-bg"
+          class="card-bg"
           x="0.5"
           y="0.5"
           rx="4.5"
           height="99%"
-          stroke="#E4E2E2"
-          width="349"
+          stroke="#e4e2e2"
+          width="299"
           fill="#1a1b27"
           stroke-opacity="0"
         />
@@ -44,7 +116,7 @@
         y="0"
         class="header"
         data-testid="header"
-      >My Programming Languages</text>
+      >Most Used Languages</text>
     </g>
       </g>
     
@@ -56,148 +128,152 @@
           
     <svg data-testid="lang-items" x="25">
       
+  
       <mask id="rect-mask">
-        <rect x="0" y="0" width="300" height="8" fill="white" rx="5" />
-      </mask>
+          <rect x="0" y="0" width="250" height="8" fill="white" rx="5"/>
+        </mask>
+        
+        <rect
+          mask="url(#rect-mask)"
+          data-testid="lang-progress"
+          x="0"
+          y="0"
+          width="80.29"
+          height="8"
+          fill="#e34c26"
+        />
       
-          <rect
-            mask="url(#rect-mask)" 
-            data-testid="lang-progress"
-            x="0" 
-            y="0"
-            width="139.03" 
-            height="8"
-            fill="#e34c26"
-          />
-        
-          <rect
-            mask="url(#rect-mask)" 
-            data-testid="lang-progress"
-            x="139.03" 
-            y="0"
-            width="46.89" 
-            height="8"
-            fill="#f1e05a"
-          />
-        
-          <rect
-            mask="url(#rect-mask)" 
-            data-testid="lang-progress"
-            x="185.92000000000002" 
-            y="0"
-            width="45.88" 
-            height="8"
-            fill="#3572A5"
-          />
-        
-          <rect
-            mask="url(#rect-mask)" 
-            data-testid="lang-progress"
-            x="231.8" 
-            y="0"
-            width="34.82" 
-            height="8"
-            fill="#89e051"
-          />
-        
-          <rect
-            mask="url(#rect-mask)" 
-            data-testid="lang-progress"
-            x="266.62" 
-            y="0"
-            width="15.05" 
-            height="8"
-            fill="#701516"
-          />
-        
-          <rect
-            mask="url(#rect-mask)" 
-            data-testid="lang-progress"
-            x="281.67" 
-            y="0"
-            width="17.36" 
-            height="8"
-            fill="#0298c3"
-          />
-        
-          <rect
-            mask="url(#rect-mask)" 
-            data-testid="lang-progress"
-            x="289.03000000000003" 
-            y="0"
-            width="15.57" 
-            height="8"
-            fill="#5B2063"
-          />
-        
-          <rect
-            mask="url(#rect-mask)" 
-            data-testid="lang-progress"
-            x="294.6" 
-            y="0"
-            width="15.41" 
-            height="8"
-            fill="#f34b7d"
-          />
-        
+        <rect
+          mask="url(#rect-mask)"
+          data-testid="lang-progress"
+          x="80.29"
+          y="0"
+          width="57.34"
+          height="8"
+          fill="#3572A5"
+        />
+      
+        <rect
+          mask="url(#rect-mask)"
+          data-testid="lang-progress"
+          x="137.63"
+          y="0"
+          width="37.19"
+          height="8"
+          fill="#f1e05a"
+        />
+      
+        <rect
+          mask="url(#rect-mask)"
+          data-testid="lang-progress"
+          x="174.82"
+          y="0"
+          width="32.05"
+          height="8"
+          fill="#89e051"
+        />
+      
+        <rect
+          mask="url(#rect-mask)"
+          data-testid="lang-progress"
+          x="206.87"
+          y="0"
+          width="16.37"
+          height="8"
+          fill="#663399"
+        />
+      
+        <rect
+          mask="url(#rect-mask)"
+          data-testid="lang-progress"
+          x="223.24"
+          y="0"
+          width="10.49"
+          height="8"
+          fill="#41b883"
+        />
+      
+        <rect
+          mask="url(#rect-mask)"
+          data-testid="lang-progress"
+          x="233.73000000000002"
+          y="0"
+          width="18.310000000000002"
+          height="8"
+          fill="#ecdebe"
+        />
+      
+        <rect
+          mask="url(#rect-mask)"
+          data-testid="lang-progress"
+          x="242.04000000000002"
+          y="0"
+          width="17.96"
+          height="8"
+          fill="#701516"
+        />
+      
       
     <g transform="translate(0, 25)">
+      <g transform="translate(0, 0)"><g transform="translate(0, 0)">
+    <g class="stagger" style="animation-delay: 450ms">
       <circle cx="5" cy="6" r="5" fill="#e34c26" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        HTML (46.34%)
+        HTML 32.12%
       </text>
     </g>
-  
-    <g transform="translate(150, 25)">
-      <circle cx="5" cy="6" r="5" fill="#f1e05a" />
-      <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        JavaScript (15.63%)
-      </text>
-    </g>
-  
-    <g transform="translate(0, 50)">
+  </g><g transform="translate(0, 25)">
+    <g class="stagger" style="animation-delay: 600ms">
       <circle cx="5" cy="6" r="5" fill="#3572A5" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Python (15.29%)
+        Python 22.94%
       </text>
     </g>
-  
-    <g transform="translate(150, 50)">
+  </g><g transform="translate(0, 50)">
+    <g class="stagger" style="animation-delay: 750ms">
+      <circle cx="5" cy="6" r="5" fill="#f1e05a" />
+      <text data-testid="lang-name" x="15" y="10" class='lang-name'>
+        JavaScript 14.88%
+      </text>
+    </g>
+  </g><g transform="translate(0, 75)">
+    <g class="stagger" style="animation-delay: 900ms">
       <circle cx="5" cy="6" r="5" fill="#89e051" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Shell (11.61%)
+        Shell 12.82%
       </text>
     </g>
-  
-    <g transform="translate(0, 75)">
+  </g></g><g transform="translate(150, 0)"><g transform="translate(0, 0)">
+    <g class="stagger" style="animation-delay: 450ms">
+      <circle cx="5" cy="6" r="5" fill="#663399" />
+      <text data-testid="lang-name" x="15" y="10" class='lang-name'>
+        CSS 6.55%
+      </text>
+    </g>
+  </g><g transform="translate(0, 25)">
+    <g class="stagger" style="animation-delay: 600ms">
+      <circle cx="5" cy="6" r="5" fill="#41b883" />
+      <text data-testid="lang-name" x="15" y="10" class='lang-name'>
+        Vue 4.20%
+      </text>
+    </g>
+  </g><g transform="translate(0, 50)">
+    <g class="stagger" style="animation-delay: 750ms">
+      <circle cx="5" cy="6" r="5" fill="#ecdebe" />
+      <text data-testid="lang-name" x="15" y="10" class='lang-name'>
+        Roff 3.32%
+      </text>
+    </g>
+  </g><g transform="translate(0, 75)">
+    <g class="stagger" style="animation-delay: 900ms">
       <circle cx="5" cy="6" r="5" fill="#701516" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Ruby (5.02%)
+        Ruby 3.19%
       </text>
     </g>
-  
-    <g transform="translate(150, 75)">
-      <circle cx="5" cy="6" r="5" fill="#0298c3" />
-      <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Perl (2.45%)
-      </text>
+  </g></g>
     </g>
   
-    <g transform="translate(0, 100)">
-      <circle cx="5" cy="6" r="5" fill="#5B2063" />
-      <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Gherkin (1.86%)
-      </text>
-    </g>
-  
-    <g transform="translate(150, 100)">
-      <circle cx="5" cy="6" r="5" fill="#f34b7d" />
-      <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        C++ (1.80%)
-      </text>
-    </g>
-  
-    
     </svg>
   
         </g>
